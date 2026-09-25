@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>HabitFlow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>HabitFlow</h1>
+            <div class="today-progress-container">
+                <div class="progress-label">Today's Progress</div>
+                <div class="progress-bar-bg">
+                    <div id="overall-progress-fill" class="progress-bar-fill"></div>
+                </div>
+                <span id="progress-text">0%</span>
+            </div>
+        </header>
+
+        <main id="habit-list">
+            <!-- Habits will be injected here -->
+        </main>
+
+        <button id="add-habit-btn" class="fab">+</button>
+    </div>
+
+    <!-- Modal for Adding/Editing -->
+    <div id="modal-overlay" class="modal-overlay hidden">
+        <div class="modal">
+            <h2 id="modal-title">Add Habit</h2>
+            <input type="text" id="habit-input" placeholder="Enter habit name..." maxlength="30">
+            <div class="modal-actions">
+                <button id="cancel-btn" class="btn-secondary">Cancel</button>
+                <button id="save-btn" class="btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

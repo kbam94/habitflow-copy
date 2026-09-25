@@ -1,0 +1,7 @@
+{
+  "name": "HabitFlow",
+  "description": "A polished, dark-themed mobile habit tracker with 7-day history and progress tracking.",
+  "model": "google/gemma-4-31b-it",
+  "prompt": "Build me a polished mobile-first habit tracker. Users should be able to create habits, edit habits, delete habits, mark habits complete for today, and view a simple 7-day history for each habit. Show today's completion progress. Persist all data in localStorage. Use a dark modern interface with clear progress indicators and subtle animations. Use only HTML, CSS, and plain JavaScript.",
+  "generatedAt": "2026-09-25T07:40:53.630Z"
+}
